@@ -6,7 +6,7 @@ This is my first project on the creation and deletion element using js
 1. Create a div
 2. Added <li></li> and <button></button> tag inside the <div></div> tag
 ```
-# The structure of <div> tag is 
+# The structure of "div" tag is 
 ```
 <div class="divs">
   <li></li>
