@@ -9,7 +9,7 @@ toDOList.style.gap = "20px"
 create.addEventListener("click", () => {
     const data = document.querySelector('.texts').value;
 
-    if (data == "") {
+    if (data === "") {
         alert("Abe kuch text dal saale");
     }
     else {
