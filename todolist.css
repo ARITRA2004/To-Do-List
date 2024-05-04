@@ -5,10 +5,10 @@
         padding: 0;
     }
 
-    body {
+    /* body {
         background: rgb(28, 19, 173);
         background: linear-gradient(90deg, rgba(28, 19, 173, 1) 0%, rgba(60, 50, 215, 1) 40%, rgba(166, 3, 181, 1) 64%, rgba(193, 29, 209, 1) 86%);
-    }
+    } */
 
     .container {
         display: flex;
@@ -19,7 +19,7 @@
         /* border: 2px solid black; */
         border-radius: 8px;
         max-width: 50%;
-        height: 35rem;
+        height: 36.6rem;
         margin: 4% auto;
         backdrop-filter: blur(10px);
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -27,24 +27,29 @@
 
     .button:hover {
         cursor: pointer;
-        color: rgb(190, 73, 73);
+        /* color: rgb(190, 73, 73); */
+        color: white;
+        scale: 1.2;
+        transition: all 0.3s;
     }
-
     .input {
         margin-top: 2%;
         display: flex;
         gap: 20px;
         outline: none;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
     }
 
     .button {
         width: 60px;
         height: 38px;
         border-radius: 8px;
-        background-color: chartreuse;
+        background-color: rgb(30, 19, 155);
         border: none;
         font-family: "Poppins", sans-serif;
-
+        scale: 1.1;
     }
 
     .texts {
@@ -94,11 +99,21 @@
         height: 25px;
         width: 55px;
         border-radius: 8px;
-
+        background-color: tomato;
     }
 
     .btn:hover {
         cursor: pointer;
+        color: white;
+    }
+    .image{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+    }
+    .all-items li{
+        width: -webkit-fill-available;
+        text-align: justify;
     }
 
     @media (max-width:600px) {
@@ -108,6 +123,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: #80b9ba !important;
         }
 
         .container {
@@ -117,4 +133,8 @@
             justify-content: center;
             align-items: center;
         }
+        .image{
+            display: none;
+        }
+
     }
